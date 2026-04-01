@@ -51,7 +51,7 @@ public class Main {
         byte jar = 120;
         byte jarWhite = 2;
         byte jarBrown = 4;
-        int result1 = 120/(2+4);
+        int result1 = jar / (2 + 4);
         int jW = result1 * jarWhite;
         int jB = result1 * jarBrown;
         System.out.println("В школе,где " + result1 + " классов,нужно " + jW + " банок белой краски и " + jB + " банок коричневой краски");
