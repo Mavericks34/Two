@@ -37,27 +37,24 @@ public class Main {
         System.out.println("Задание 4");
         byte bottle = 16;
         byte time = 2;
-        byte a1day = 24;
-        byte a3day;
-        a3day = 24 * 3;
-        int a1month = 31;
-        a1month = a1month * 24;
         int resUlt = bottle / time;
+        short oneDay = 24 * 60;
+        short threeDay = (24 * 3) * 60;
+        int oneMonth = (31 * 24) * 60;
         System.out.println("За 1 минуту машина производит " + resUlt + " бутылок");
         System.out.println("За 20 минут машина произвела " + resUlt * 20 + " штук бутылок");
-        System.out.println("За сутки машина произвела " + resUlt * (a1day * 60) + " бутылки");
-        System.out.println("За сутки машина произвела " + resUlt * (a3day * 60) + " бутылок");
-        System.out.println("За месяц машина произвела " + resUlt * (a1month * 60) + " бутылок");
+        System.out.println("За сутки машина произвела " + resUlt * oneDay + " бутылки");
+        System.out.println("За трое суток машина произвела " + resUlt * threeDay + " бутылок");
+        System.out.println("За месяц машина произвела " + resUlt * oneMonth + " бутылок");
 
         System.out.println("Задание 5");
         byte jar = 120;
-        byte white = 2;
-        byte brown = 4;
+        byte jarWhite = 2;
+        byte jarBrown = 4;
         int result1 = 120/(2+4);
-        int am = result1 * white;
-        int bm = result1 * brown;
-        int ab = am + bm;
-        System.out.println("В школе,где " + result1 + " классов,нужно " + am + " банок белой краски и " + bm + " банок коричневой краски");
+        int jW = result1 * jarWhite;
+        int jB = result1 * jarBrown;
+        System.out.println("В школе,где " + result1 + " классов,нужно " + jW + " банок белой краски и " + jB + " банок коричневой краски");
 
         System.out.println("Задание 6");
         short banana = 5 * 80;
@@ -70,30 +67,23 @@ public class Main {
 
         System.out.println("Задание 7");
         byte weight = 7;
-        double wei250 = 250 * 0.001;
-        System.out.println("Перевели в кг " + wei250 );
-        double wei500 = 500 * 0.001;
-        System.out.println("Перевели в кг " + wei500);
-        double wei1 = 7 / wei250;
-        System.out.println("Если терять по 250 грамм в день понадобиться " + wei1 + " дней");
-        double wei2 = 7 / wei500;
-        System.out.println("Если терять по 500 грамм в день понадобиться " + wei2 + " дней");
-        double wei1wei2 = (wei1 + wei2) / 2;
-        System.out.println("Может потребоваться в среднем дней,чтобы добиться результата " + wei1wei2);
+
+
 
         System.out.println("Задание 8");
-        double maria = 67760 * 1.1;
-        double den = 83690 * 1.1;
-        double kris = 76230 * 1.1;
-        int maria12 = 67760 * 12;
-        int den12 = 83690 * 12;
-        int kris12 = 76230 * 12;
-        double maria112 = maria * 12;
-        double den112 = den * 12;
-        double kris112 = kris * 12;
-        System.out.println("Мария теперь получает " + maria + " рублей." + " Годовой доход вырос на " + (maria112 - maria12) + " рублей");
-        System.out.println("Денис теперь получает " + den + " рублей." + " Годовой доход вырос на " + (den112 - den12) + " рублей");
-        System.out.println("Кристина теперь получает " + kris + " рублейю." + " Годовой доход вырос на " + (kris112 - kris12) + " рублей");
+        int maria = 67760;
+        int den = 83690;
+        int kris = 76230;
+        int mariaNew = (67760 * 10 / 100) + 67760;
+        int denNew = (83690 * 10 / 100) + 83690;
+        int krisNew = (76230 * 10 / 100) + 76230;
+        int mariaDifference = (mariaNew * 12) - (maria*12);
+        int denDifference = (denNew * 12) - (den * 12);
+        int krisDifference = (krisNew * 12) - (kris * 12);
+        System.out.println("Мария теперь получает " + mariaNew + " рублей." + "Годовой доход вырос на " + mariaDifference + " рублей.");
+        System.out.println("Денис теперь получает " + denNew + " рублей." + "Годовой доход вырос на " + denDifference + " рублей.");
+        System.out.println("Кристина теперь получает " + krisNew + " рублей." + "Годовой доход вырос на " + krisDifference + " рубдей.");
+
 
 
 
