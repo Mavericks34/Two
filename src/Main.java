@@ -66,9 +66,16 @@ public class Main {
         System.out.println("Всего грамм " + result22 + " переведённых в кг " + kg);
 
         System.out.println("Задание 7");
-        byte weight = 7;
-
-
+        short weight = 7 * 1000;
+        System.out.println("Перевели килограммы в граммы = " + weight + " г.");
+        short oneDayLostWeight = 250;
+        System.out.println(oneDayLostWeight);
+        short oneDayLostWeight2 = 500;
+        System.out.println(oneDayLostWeight2);
+        int optionOne = weight / oneDayLostWeight;
+        int optionTwo = weight / oneDayLostWeight2;
+        System.out.println("Если спортсмен будет терять по 250 грамм каждый день то скинет 7 кг через " + optionOne + " дней.");
+        System.out.println("Если спортсен будет терять по 500 грамм каждый день то скинет 7 кг через " + optionTwo + " дней.");
 
         System.out.println("Задание 8");
         int maria = 67760;
